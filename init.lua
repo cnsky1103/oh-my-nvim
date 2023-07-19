@@ -15,6 +15,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.wo.relativenumber = true
 vim.g.mapleader = require("custom_keys").leader
 vim.g.maplocalleader = "\\"
 
