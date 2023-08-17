@@ -18,6 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.wo.relativenumber = true
 vim.g.mapleader = require("custom_keys").leader
 vim.g.maplocalleader = "\\"
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 require("lazy").setup({
 	spec = {
