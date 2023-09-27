@@ -1,6 +1,9 @@
 -- Basic settings
 require("basic")
 
+-- Set bash
+vim.opt.shell = '/bin/bash'
+
 -- Load plugins
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
