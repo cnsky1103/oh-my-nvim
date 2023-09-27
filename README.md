@@ -67,7 +67,7 @@ mv ~/.local/share/nvim  ~/.local/share/nvim.bak
 1️⃣ **Clone oh-my-nvim repo**
 
 ```
-git clone https://github.com/hardhackerlabs/oh-my-nvim.git ~/.config/nvim
+git clone https://github.com/cnsky1103/oh-my-nvim.git ~/.config/nvim
 ```
 
 2️⃣ **Start `nvim` in your terminal, then automatically install and setup all plugins**
