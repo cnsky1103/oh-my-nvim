@@ -135,9 +135,9 @@ local function set_keymap()
 	map("n", keys.switch_session, ":SessionManager load_session<CR>", option)
 
 	-- Change mappings of 0 and $, keep '`'
-	map("n", "`", "~")
-	map("n", "0", "`")
-	map("n", "$", "0")
+	map("n", "~", "`", option)
+	map("n", "`", "0", option)
+	map("n", "0", "$", option)
 end
 
 -- Set up transparency
