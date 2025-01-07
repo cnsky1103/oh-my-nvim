@@ -67,6 +67,11 @@ return {
 			require("aerial").setup({
 				lazy_load = false,
 				open_automatic = require("custom_opts").auto_open_outline,
+				layout = {
+					max_width = 0.15,
+					min_width = 17,
+				},
+				filter_kind = false,
 			})
 		end,
 	},
@@ -74,22 +79,10 @@ return {
 	-- Tab line
 	{
 		"akinsho/bufferline.nvim",
-		version = "v4.1.0",
+		version = "*",
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("plugins/bufferline/config")()
-		end,
-	},
-
-	-- cmd line
-	{
-		"folke/noice.nvim",
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
-		},
-		config = function()
-			require("plugins/noice/config")()
 		end,
 	},
 

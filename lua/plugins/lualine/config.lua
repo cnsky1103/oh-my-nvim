@@ -77,20 +77,12 @@ return function()
 				},
 			},
 			lualine_x = {
-				{
-					require("noice").api.status.command.get,
-					cond = require("noice").api.status.command.has,
-				},
-				{
-					require("noice").api.status.search.get,
-					cond = require("noice").api.status.search.has,
-				},
 				"encoding",
 				"fileformat",
 				"filetype",
 			},
 			lualine_y = {
-				"filesize",
+				"%L",
 				"progress",
 				-- {
 				-- 	"diagnostics",
